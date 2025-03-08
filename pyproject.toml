@@ -1,7 +1,7 @@
 [project]
-name = "my_project"
+name = "cpp_for_high_perf"
 version = "0.1.0"
-description = "Python bindings for my_project C++ library"
+description = "Python bindings for cpp_for_high_perf C++ library"
 readme = "README.md"
 authors = [{ name = "Your Name", email = "your.email@example.com" }]
 requires-python = ">=3.10"
@@ -12,7 +12,7 @@ requires = ["setuptools>=42", "wheel", "cmake>=3.10", "pybind11>=2.6.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["my_project"]
+packages = ["cpp_for_high_perf"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

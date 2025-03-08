@@ -30,13 +30,13 @@ class CMakeBuild(build_ext):
 
 
 setup(
-    name="my_project",
-    packages=["my_project"],
-    ext_modules=[CMakeExtension("my_project.lib.my_project_core")],
+    name="cpp_for_high_perf",
+    packages=["cpp_for_high_perf"],
+    ext_modules=[CMakeExtension("cpp_for_high_perf.lib.cpp_for_high_perf_core")],
     cmdclass={"build_ext": CMakeBuild},
     zip_safe=False,
     package_data={
-        "my_project": ["lib/*.so", "lib/*.pyd", "lib/*.pyi"],
+        "cpp_for_high_perf": ["lib/*.so", "lib/*.pyd", "lib/*.pyi"],
     },
     include_package_data=True,
 )
